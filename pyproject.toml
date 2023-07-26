@@ -1,0 +1,14 @@
+[tool.black]
+exclude = '''
+/(
+  venv
+  | migrations
+  | frontend
+  | node_modules
+)/
+'''
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+use_parentheses = true
+known_first_party = ["certego_saas"]
